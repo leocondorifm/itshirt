@@ -1,16 +1,22 @@
-import React from 'react'
-import './App.css';
+
+import ProductoCard from './components/ProductoCard/Index'; //Invoco el Componente Producto.
+import React from 'react'; //No es obligatorio, podría no estar. En versiones anteriores era necesario.
+import './App.css'; //Importar CSS para mi módulo.
 
 const App = () => {
-  let profesor = "Leo";
+  //let profesor = "Samuel Romero";
 
   return (
-    <div>
-      <h1>Hola Mundo desde el localhost:</h1>
-      <h2 className='subtitulo'>{profesor}</h2>
-      <h3 style={{color:"blue"}}>la edad es: {24 + 19}</h3>
-      {/* esto es un comentario */}
-    </div>
+    <>
+        {
+          <ProductoCard/>
+        /*
+          <h1>Hola Mundo</h1>
+          <h2 className='subtitulo'>{profesor}</h2>
+          <h3 style={{color: "blue"}}>La edad es: { 37 + 4 }</h3>
+        */
+        }
+    </>
   )
 }
 
